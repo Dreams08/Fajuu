@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mis facturas</title>
+        
+        <!-- Link accesos a archivos css internos -->
+        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="/styles/header.css">
+        <link rel="stylesheet" href="/styles/footer.css">
+     
+        <link rel="stylesheet" href="/styles/stylesPages/misFacturas/misFacturasProveedor.css">
+    </head>
+    <body>
+        <header class="header">
+            <section class="info-section">
+                <div class="titles-section">
+                    <a href="/pages/home.html" class="anchor-titles_section">
+                        <h1>fajuu</h1>
+                        <h2>Administrador</h2>
+                    </a>
+                </div>
+                <div class="controllers-section">
+                    <form class="frm-search" action="">
+                        <label for="inp-search"><img src="/sources/img/header/lupa.png" alt=""></label>
+                        <input id="inp-search" placeholder="Buscar..." type="text">
+                    </form>
+                    <div class="btn-controllers">
+                        <a class="btn-alert"><img src="/sources/img/header/alerta.png" alt=""></a>
+                        <a class="btn-profile" href="/pages/miPerfil/miPerfil.html"><img src="/sources/img/header/usuario.png" alt=""></a>
+                        <a class="btn-exit" href="/index.html"><img src="/sources/img/header/cerrar-sesion.png" alt=""></a>
+                    </div>
+                </div>
+            </section>
+            <nav class="menu-section">
+                <ul class="list-buttons">
+                    <li class="btn-list"><a href="/pages/entrada/entrada.html">Entrada</a></li>
+                    <li class="btn-list"><a href="/pages/misFacturas/misFacturas.html">Mis facturas</a></li>
+                    <li class="btn-list"><a href="/pages/productos/productos.html">Productos</a></li>
+                    <li class="btn-list"><a href="/pages/requisicion/requisicion.html">Requisicion</a></li>
+                    <li class="btn-list"><a href="/pages/usuario/usuario.html">Usuario</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="section-misFacturas">
+                <h1>Buscar facturas</h1>
+                <form class="frm-misFacturas">
+                    <div class="section-froms">
+                        <!-- Seccion de seleccion de factura -->
+
+                        <label class="lbl-misFacturas" for="slc-misFacturas">Tipo de factura</label>
+                        <select name="prueba" class="slc-misFacturas" id="slc-misFacturas" onchange="window.location.href=this.value">
+                            <option value="">No definida</option>
+                            <option value="/pages/misFacturas/misFacturasProveedor.html" selected>Proveedor</option>
+                            <option value="/pages/misFacturas/misFacturasCliente.html">Cliente</option>
+                        </select>
+                        
+
+                        <label  class="lbl-IDcliente_proveedor" for="inp-IDcliente_proveedor">ID proveedor</label>
+                        <input class="inp-IDcliente_proveedor" id="inp-IDcliente_proveedor" type="text">
+                        
+                        <label  class="lbl-IDfactura_proveedor" for="inp-IDfactura_proveedor">ID factura</label>
+                        <input class="inp-IDfactura_proveedor" id="inp-IDfactura_proveedor" type="text">
+                        
+                        <label class="lbl-estado_cliente" for="slc-estado_proveedor">Estado</label>
+                        <select name="" class="slc-estado_proveedor" id="slc-estado_proveedor">
+                            <option value="Pendiente">Pendiente</option>
+                            <option value="Pago">Pago</option>
+                            <option value="Cancelado">Cancelado</option>
+                        </select>
+                        
+                        <label class="lbl-fechaIngreso_proveedor" for="inp-fechaIngreso_proveedor">Fecha de ingreso</label>
+                        <input class="inp-fechaIngreso_proveedor" id="inp-fechaIngreso_proveedor" type="date" name="">
+                    </div>
+                    <div class="section-buttons">
+                        <input class="btn btn-proveedor btn-proveedor_sudmin" id="btn-sudmin_cliente" type="submit" value="Limpiar">
+                        <button class="btn btn-proveedor btn-proveedor_filtra">Filtra</button>
+                    </div>
+                </form>
+
+                <h1>Relacion de facturas</h1>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <th>Item</th>
+                            <th>ID factura</th>
+                            <th>Proveedor</th>
+                            <th>Fecha</th>
+                            <th>Estado</th>
+                            <th>subTotal</th>
+                            <th>Acciones</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer - buttons action -->
+        <footer class="footer">
+            <div class="action-buttons">
+                <a href="/pages/misFacturas/misFacturas.html" class="btn btn-primary">Volver</a>
+            </div>
+        </footer>
+
+    </body>
+</html>

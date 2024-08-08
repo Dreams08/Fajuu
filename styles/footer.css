@@ -1,0 +1,36 @@
+.action-buttons{
+    display: flex;
+    margin: 1rem 0;
+    width: 100%;
+    position: sticky;
+    justify-content: space-between;
+    top: 100%;
+}
+.action-buttons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+}
+.btn-primary, .btn-second{
+    width: 15%;
+    height: 1.5rem;
+    color: var(--color-white);
+}
+.btn-primary{
+    background-color: var(--color-orange-dark);
+}
+.btn-second{
+    background-color: var(--color-blue-dark);
+}
+
+/* BOTONES REQUISICION - BOTONES REQUISICION  */
+
+.buttons-requisicion{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons-requisicion a{
+    width: 45%;
+}

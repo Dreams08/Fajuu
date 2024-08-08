@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Log in</title>
+
+        <!-- Link css-->
+        <link rel="stylesheet" href="styles/stylesPages/logIn.css">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+       
+            <h1 class="titulo">logIn</h1>
+            <form class="form"  >
+                <select class="select" id="select" name="select">
+                    <option value="">Cedula ciudadania</option>
+                    <option value="">Cedula extranjeria</option>
+                    <option value="">Tarjeta de identidad</option>
+                </select>       
+
+                
+                <input class="identidad inp-text"  type="text" placeholder="CC" id="username" name="username" required>
+               
+                <input type="password"  placeholder="Contraseña" class="password inp-text" id="password" name="password" required>
+                
+                <input type="checkbox" class="remember-checkbox" id="remember-checkbox" name="remember-checkbox">
+                <label class="remember"  for="remember-checkbox">Recuerdame</label><br><br>
+                
+               
+                <!-- <input class="submit" type="submit" value="Iniciar Sesión"> -->
+
+                <button class="btn-iniciar-sesion">Iniciar sesión</button>
+
+                
+                <input id="btn-modal" type="checkbox">
+                <label class="btn-password" for="btn-modal" class="lbl-modal">
+                    <a href="">¿Recuperar Contraseña?</a>
+                </label>
+            </form>
+
+            <section class="modal">
+                <div class="container-modal">
+                    <header>Recuperar contraseña</header>
+                    <label class="lbl-modal" for="btn-modal">X</label>
+                    <div>
+                        <p>Escribe un mensaje de las razones de la perdida, y un administrador se comunicara con tigo :D</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                
+                
+            </section>
+        </div>
+    </body>
+</html>

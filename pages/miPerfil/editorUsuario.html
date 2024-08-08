@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Editor de Usuario</title>
+
+        <!-- Link accesos a archivos css internos -->
+        <link rel="stylesheet" href="/styles/styles.css">   <!-- Estilos generales -->
+        <link rel="stylesheet" href="/styles/header.css">   <!--  header -->
+        <link rel="stylesheet" href="/styles/footer.css">   <!--  footer - botones de accion -->
+
+        <!-- Link stylos unicos -->
+        <link rel="stylesheet" href="/styles/stylesPages/miPerfil/editorUsuario.css">
+    </head>
+    <body>
+        <header class="header">
+            <section class="info-section">
+                <div class="titles-section">
+                    <a href="/pages/home.html" class="anchor-titles_section">
+                        <h1>fajuu</h1>
+                        <h2>Administrador</h2>
+                    </a>
+                </div>
+                <div class="controllers-section">
+                    <form class="frm-search" action="">
+                        <label for="inp-search"><img src="/sources/img/header/lupa.png" alt=""></label>
+                        <input id="inp-search" placeholder="Buscar..." type="text">
+                    </form>
+                    <div class="btn-controllers">
+                        <a class="btn-alert"><img src="/sources/img/header/alerta.png" alt=""></a>
+                        <a class="btn-profile" href="/pages/miPerfil/miPerfil.html"><img src="/sources/img/header/usuario.png" alt=""></a>
+                        <a class="btn-exit" href="/index.html"><img src="/sources/img/header/cerrar-sesion.png" alt=""></a>
+                    </div>
+                </div>
+            </section>
+            <nav class="menu-section">
+                <ul class="list-buttons">
+                    <li class="btn-list"><a href="/pages/entrada/entrada.html">Entrada</a></li>
+                    <li class="btn-list"><a href="/pages/misFacturas/misFacturas.html">Mis facturas</a></li>
+                    <li class="btn-list"><a href="/pages/productos/productos.html">Productos</a></li>
+                    <li class="btn-list"><a href="/pages/requisicion/requisicion.html">Requisicion</a></li>
+                    <li class="btn-list"><a href="/pages/usuario/usuario.html">Usuario</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="section-titles_editorUsuario">
+                <h1>Editor de usuario</h1>
+            </div>
+            <div class="section-froms_editorUsuario">              
+                <form class="form-userData_editorUsuario" action="">
+                    <div class="frm-item_editorUsuario frm-tipoUsuario">
+                        <label  class="lbl-item_editorUsuario lbl-tipoUsuario" for="slc-tipoUsuario">Tipo de usuario</label>
+                        <select class="slc-item_editorUsuario slc-tipoUsuario slc-tipoUsuario" name="" id="slc-tipoUsuario">
+                            <option value="valu1">Operador</option>
+                            <option value="value2">Administrador</option>
+                        </select>
+                    </div>
+
+                    <div class="frm-item_editorUsuario frm-nombre">
+                        <label class="lbl-item_editorUsuario lbl-nombre" for="inp-nombre">Nombres</label>
+                        <input class="inp-item_editorUsuario inp-nombre" id="inp-nombre" type="text">
+                    </div>
+
+                    <div class="frm-item_editorUsuario frm-apellido">
+                        <label class="lbl-item_editorUsuario lbl-apellido" for="inp-apellido">Apellidos</label>
+                        <input class="inp-item_editorUsuario inp-apellido" id="inp-apellido" type="text">
+                    </div>
+
+                    <div class="frm-item_editorUsuario frm-nacimiento">
+                        <label class="lbl-item_editorUsuario lbl-fechaNacimiento" for="inp-fechaNacimiento">Fecha de nacimiento</label>
+                        <input class="inp-item_editorUsuario inp-fechaNacimiento" type="date" id="inp-fechaNacimiento">
+                    </div>
+
+                    <div class="frm-item_editorUsuario frm-tipoIdentidad">
+                        <label class="lbl-item_editorUsuario lbl-tipoIdentidad" for="slc-tipoIdentidad">Tipo de documento</label>
+                        <select class="slc-item_editorUsuario slc-tipoIdentidad" name="" id="slc-tipoIdentidad">
+                            <option value="">Cedula ciudadania</option>
+                            <option value="">Cedula extranjeria</option>
+                            <option value="">Tarjeta de identidad</option>
+                        </select>
+                    </div>
+                    <div class="frm-item_editorUsuario frm-identificacion">
+                        <label class="lbl-item_editorUsuario lbl-numeroIdenfificacion" for="inp-numeroIdenfificacion">Identificacion</label>
+                        <input class="inp-item_editorUsuario inp-numeroIdenfificacion" id="inp-numeroIdenfificacion" type="number">
+                    </div>
+
+                    <div class="frm-item_editorUsuario frm-email">
+                        <label class="lbl-item_editorUsuario lbl-email" for="inp-email">Email</label>
+                        <input class="inp-item_editorUsuario inp-email" id="inp-email" type="text">
+                    </div>
+
+                    <div class="frm-item_editorUsuario frm-telefono">
+                        <label class="lbl-item_editorUsuario lbl-telefono" for="inp-telefono">Telefono</label>
+                        <input class="inp-item_editorUsuario inp-telefono" id="inp-telefono" type="text">
+                    </div>
+
+                    <div class="frm-item_editorUsuario frm-direccion">
+                        <label class="lbl-item_editorUsuario lbl-direccion" for="inp-direccion">Dirección</label>
+                        <input class="inp-item_editorUsuario inp-direccion" id="inp-direccion" type="text">
+                    </div>
+
+                    <div class="frm-item_editorUsuario frm-genero">
+                        <label class="lbl-item_editorUsuario lbl-genero" for="slc-genero">Genero</label>
+                        <select class="slc-item_editorUsuario slc-genero" name="" id="slc-genero">
+                            <option value="">Femenino</option>
+                            <option value="">Masculino</option>
+                            <option value="" selected>Otro</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="form-userPhoto_editorUsuario">
+                    <div class="userPhoto_editorUsuario">
+                        <div class="img-fotoPerfil">
+                            <img src="/sources/img/miPerfil/perfil.jpg" alt="">
+                        </div>
+                        <ul class="btn-fotoPerfil">
+                            <li><button onclick="alert('hola')" class="btn btn-fotoPerfil_verFoto">Ver foto</button></li>
+                            <li><button onclick="alert('hola')" class="btn btn-fotoPerfil_cambiar">Cambiar foto</button></li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="action-buttons">
+                <a href="/pages/miPerfil/miPerfil.html" class="btn btn-primary">Volver</a>
+                <a href="/pages/miPerfil/miPerfil.html" class="btn btn-second">Guardar cambios</a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Productos</title>
+        
+        <!-- Link accesos a archivos css internos -->
+        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="/styles/header.css">
+        <link rel="stylesheet" href="/styles/footer.css">
+
+        <link rel="stylesheet" href="/styles/stylesPages/productos/buscarProductos.css">      
+    </head>
+    <body>
+        <header class="header">
+            <section class="info-section">
+                <div class="titles-section">
+                    <a href="/pages/home.html" class="anchor-titles_section">
+                        <h1>fajuu</h1>
+                        <h2>Administrador</h2>
+                    </a>
+                </div>
+                <div class="controllers-section">
+                    <form class="frm-search" action="">
+                        <label for="inp-search"><img src="/sources/img/header/lupa.png" alt=""></label>
+                        <input id="inp-search" placeholder="Buscar..." type="text">
+                    </form>
+                    <div class="btn-controllers">
+                        <a class="btn-alert"><img src="/sources/img/header/alerta.png" alt=""></a>
+                        <a class="btn-profile" href="/pages/miPerfil/miPerfil.html"><img src="/sources/img/header/usuario.png" alt=""></a>
+                        <a class="btn-exit" href="/index.html"><img src="/sources/img/header/cerrar-sesion.png" alt=""></a>
+                    </div>
+                </div>
+            </section>
+            <nav class="menu-section">
+                <ul class="list-buttons">
+                    <li class="btn-list"><a href="/pages/entrada/entrada.html">Entrada</a></li>
+                    <li class="btn-list"><a href="/pages/misFacturas/misFacturas.html">Mis facturas</a></li>
+                    <li class="btn-list"><a href="/pages/productos/productos.html">Productos</a></li>
+                    <li class="btn-list"><a href="/pages/requisicion/requisicion.html">Requisicion</a></li>
+                    <li class="btn-list"><a href="/pages/usuario/usuario.html">Usuario</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="section-productos">
+                <h1>Productos</h1>
+                <form class="frm-productos">
+                    <div class="section-froms">
+                        <!-- Seccion de seleccion de factura -->
+
+                        <label  class="lbl-IDproducto" for="inp-IDproducto">ID producto</label>
+                        <input class="inp-IDproducto" id="inp-IDproducto" type="text">
+
+                        <label  class="lbl-descripcionProducto" for="inp-descripcionProducto">Descripcion</label>
+                        <input class="inp-descripcionProducto" id="inp-descripcionProducto" type="text">
+                        
+                        <label  class="lbl-IDproveedor" for="inp-IDproveedor">ID proveedor</label>
+                        <input class="inp-IDproveedor" id="inp-IDproveedor" type="text">
+                        
+                        <label class="lbl-estadoProducto" for="slc-estadoProducto">Estado</label>
+                        <select name="" class="slc-estadoProducto" id="slc-estadoProducto">
+                            <option value="" selected>Activo</option>
+                            <option value="proveedor">Agotado</option>
+                            <option value="cliente">Bloqueado</option>
+                        </select>
+                        
+                        <label class="lbl-categoria" for="slc-categoria">Categoria</label>
+                        <select name="" class="slc-categoria" id="slc-categoria">
+                            <option value="" selected>No definido</option>
+                            <option value="congelado">Congelado</option>
+                            <option value="refrigerado">Refrigerado</option>
+                            <option value="abarrotes">Abarrotes</option>
+                        </select>
+                        
+                    </div>
+                    <div class="section-buttons">
+                        <a class="btn btn-nuevoProducto" href="/pages/productos/crearProductos.html">Nuevo producto</a>
+                        <div class="search-buttons">
+                            <input class="btn btn-producto btn-sudmin" id="btn-cliente" type="submit" value="Limpiar">
+                            <button class="btn btn-producto btn-filtra">Filtra</button>
+                        </div>
+                    </div>
+                </form>
+
+                <h1>Relacion de productos</h1>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <th>ID Producto</th>
+                            <th>Descripcion</th>
+                            <th>Proveedor</th>
+                            <th>Estado</th>
+                            <th>Categoria</th>
+                            <th>Acciones</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer - buttons action -->
+        <footer class="footer">
+            <div class="action-buttons">
+                <a href="/pages/productos/productos.html" class="btn btn-primary">Volver</a>
+            </div>
+        </footer>
+
+    </body>
+</html> 

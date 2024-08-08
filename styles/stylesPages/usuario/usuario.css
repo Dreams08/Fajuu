@@ -1,0 +1,51 @@
+.section-usuario{
+    background-color: var(--color-white);
+    padding: 1rem;
+    width: 100%;
+}
+.section-usuario h1{
+    background-color: var(--color-blue-dark);
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 100;
+}
+.frm-usuario{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 0 0;
+}
+.frm-usuario a{
+    background-color: var(--color-orange-dark);
+    width: 45%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+
+}
+.data-usuario{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-gray-dark);
+    height: 3rem;
+}
+.lbl-usuario{
+    color: var(--color-blue-dark);
+    width: 20%;
+}
+.slc-usuario{
+    width: 35%;
+    background-color: var(--color-blue-dark);
+    color: var(--color-white);
+    height: 1.5rem;
+}

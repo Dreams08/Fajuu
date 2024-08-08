@@ -1,0 +1,58 @@
+.section-requisicion{
+    background-color: var(--color-white);
+    padding: 1rem;
+    width: 100%;
+}
+.section-requisicion h1{
+    background-color: var(--color-blue-dark);
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 100;
+}
+.section-froms{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.section-froms h1{
+    margin: 0 0 1rem 0;
+}
+.section-froms label{
+    color: var(--color-blue-dark);
+    display: inline-block;
+    width: 50%;
+    margin: 0 0 1rem 0 ;
+}
+.section-froms select{
+    width: 30%;
+    background-color: var(--color-blue-dark);
+    color: var(--color-white);
+    height: 1.5rem;
+}
+.section-froms input{
+    border: 2px solid var(--color-blue-dark);
+    width: 30%;
+    height: 1.5rem;
+}
+
+.frm-buscarProducto{
+    width: 48%;
+    padding: 1rem;
+}
+.frm-orden{
+    width: 48%;
+    padding: 1rem;
+}
+.btn-filtra{
+    background-color: var(--color-blue-dark);
+    width: 40%;
+    height: 1.5rem;
+    color: var(--color-white);
+}
+
+

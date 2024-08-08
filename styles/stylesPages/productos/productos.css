@@ -1,0 +1,29 @@
+.section-productos{
+    background-color: var(--color-white);
+    padding: 1rem;
+    width: 100%;
+}
+.section-productos h1{
+    background-color: var(--color-blue-dark);
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 100;
+}
+.frm-productos{
+    display: flex;
+    padding: 1rem 0 0 0;
+    justify-content: space-between;
+}
+.frm-productos a{
+    background-color: var(--color-orange-dark);
+    color: var(--color-white);
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+}

@@ -1,0 +1,32 @@
+.section-misFacturas{
+    background-color: var(--color-white);
+    padding: 1rem;
+    width: 100%;
+}
+.section-misFacturas h1{
+    background-color: var(--color-blue-dark);
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 100;
+}
+.frm-misFacturas{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 0 0;
+}
+.lbl-IDcliente{
+    color: var(--color-blue-dark);
+    width: 50%;
+}
+.inp-IDcliente{
+    width: 35%;
+    border: 2px solid var(--color-blue-dark);
+    color: var(--color-blue-dark);
+    height: 1.5rem;
+}

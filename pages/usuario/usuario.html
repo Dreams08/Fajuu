@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Usuario</title>
+        
+        <!-- Link accesos a archivos css internos -->
+        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="/styles/header.css">
+        <link rel="stylesheet" href="/styles/footer.css">
+
+        <link rel="stylesheet" href="/styles/stylesPages/usuario/usuario.css">      
+    </head>
+    <body>
+        <header class="header">
+            <section class="info-section">
+                <div class="titles-section">
+                    <a href="/pages/home.html" class="anchor-titles_section">
+                        <h1>fajuu</h1>
+                        <h2>Administrador</h2>
+                    </a>
+                </div>
+                <div class="controllers-section">
+                    <form class="frm-search" action="">
+                        <label for="inp-search"><img src="/sources/img/header/lupa.png" alt=""></label>
+                        <input id="inp-search" placeholder="Buscar..." type="text">
+                    </form>
+                    <div class="btn-controllers">
+                        <a class="btn-alert"><img src="/sources/img/header/alerta.png" alt=""></a>
+                        <a class="btn-profile" href="/pages/miPerfil/miPerfil.html"><img src="/sources/img/header/usuario.png" alt=""></a>
+                        <a class="btn-exit" href="/index.html"><img src="/sources/img/header/cerrar-sesion.png" alt=""></a>
+                    </div>
+                </div>
+            </section>
+            <nav class="menu-section">
+                <ul class="list-buttons">
+                    <li class="btn-list"><a href="/pages/entrada/entrada.html">Entrada</a></li>
+                    <li class="btn-list"><a href="/pages/misFacturas/misFacturas.html">Mis facturas</a></li>
+                    <li class="btn-list"><a href="/pages/productos/productos.html">Productos</a></li>
+                    <li class="btn-list"><a href="/pages/requisicion/requisicion.html">Requisicion</a></li>
+                    <li class="btn-list"><a href="/pages/usuario/usuario.html">Usuario</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="section-usuario">
+                <h1>Usuario</h1>
+                <form class="frm-usuario">
+                    <div class="data-usuario">
+                        <label class="lbl-usuario" for="slc-usuario">Tipo de factura</label>
+                        <select name="" class="slc-usuario" id="slc-usuario" onchange="window.location.href=this.value">
+                            <option value="">No definida</option>
+                            <option value="/pages/usuario/usuarioOperador/usuarioOperador.html">Operador</option>
+                            <option value="/pages/usuario/usuarioCliente/usuarioProveedor.html">Proveedor</option>
+                            <option value="/pages/usuario/usuarioCliente/usuarioCliente.html">Cliente</option>
+                        </select>
+                    </div>
+                    <a class="btn" href="">Crear usuario</a>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer - buttons action -->
+        <footer class="footer">
+            <div class="action-buttons">
+                <a href="/pages/home.html" class="btn btn-primary">Volver</a>
+            </div>
+        </footer>
+    </body>
+</html>

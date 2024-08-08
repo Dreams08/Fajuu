@@ -1,0 +1,136 @@
+/* Fuente Logo fajuu */
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+/* Fuente Textos */
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+:root {
+  /* colores */
+  --color-white: #ffffff;
+  --color-gray-light: #eeeeee;
+  --color-gray-dark: #d9d9d9;
+  --color-green-dark: #3c9684;
+  --color-green-light: #46b39d;
+  --color-orange-dark: #e37a40;
+  --color-orange-light: #eba782;
+  --color-blue-dark: #324c5c;
+  --color-blue-light: #475e6c;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: var(--color-gray-light);
+  width: 100%;
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+}
+.titulo {
+  position: absolute;
+  top: 120px;
+}
+
+.form {
+  margin: auto;
+  width: 45%;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main {
+  width: 100%;
+  height: 80%;
+  padding: 1rem;
+}
+
+.footer {
+  height: 8%;
+  padding: 0 2rem;
+}
+
+/* BUTTON STYLES */
+
+#remember-checkbox {
+  background: red;
+  display: block;
+  margin-right: 90vh;
+  margin-top: 14px;
+  min-width: 1vw;
+}
+
+.remember {
+  margin-left: 25px;
+  margin: -17px 17px;
+  font-size: medium;
+}
+
+#btn-modal {
+  background-color: red;
+}
+
+.btn-password {
+  font-size: medium;
+  margin-left: 75vh;
+  margin: -5.5rem 72%;
+  white-space: nowrap;
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+}
+.btn:active {
+  transform: scale(1.1);
+}
+
+.lbl-modal {
+  position: relative;
+  padding-left: 65%;
+}
+
+.btn-iniciar-sesion {
+  background-color: var(--color-blue-dark);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ESTILOS DE TABLA */
+.table {
+  width: 100%;
+  display: flex;
+}
+.table table {
+  width: 100%;
+}
+.table thead {
+  background-color: var(--color-blue-light);
+  color: var(--color-white);
+  height: 1.5rem;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: var(--color-gray-light);
+}
+
+.table tbody tr:hover {
+  background-color: var(--color-orange-dark);
+}
+
+.table td,
+th {
+  font-weight: 100;
+  height: 1.5rem;
+}
